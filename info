@@ -1,0 +1,65 @@
+Folder Structure
+vetfirststeps/
+│
+├── index.html             # Homepage
+│
+├── modules/
+    ├── professional-ethics.html
+    ├── canine-feline-ethology.html
+    ├── veterinary-terminology.html
+    ├── oie-general-overview.html
+    ├── anatomy-physiology-1.html
+    ├── anatomy-physiology-2.html
+    ├── anatomy-physiology-3.html
+    ├── anatomy-physiology-4.html
+    ├── intro-pharmacy.html
+    ├── intro-laboratory-analysis.html
+    ├── surgical-equipment.html
+    ├── veterinary-nutrition.html
+    ├── patient-preparation.html
+    ├── sample-collection.html
+    ├── hematology.html
+    ├── chemistry.html
+    ├── veterinary-pharmacology-1.html
+    ├── parasitology.html
+    ├── infectious-diseases.html
+    ├── dermatology-intro.html
+    ├── vaccination-programs.html
+    ├── fluid-therapy.html
+    ├── reproduction.html
+    ├── anesthesia-1.html
+    ├── anesthesia-2.html
+    ├── first-aid.html
+    ├── ultrasound.html
+    ├── practical-cardiology.html
+    ├── veterinary-administration.html
+    └── client-care.html
+
+│
+├── pages/                 # Other site pages
+│   ├── login.html
+│   ├── signup.html
+│   ├── documentation.html
+│   ├── glossary.html
+│   └── quiz.html
+│
+├── css/
+│   └── styles.css
+│
+├── js/
+│   └── script.js
+│
+├── php/
+│   ├── db_connect.php
+│   ├── signup.php
+│   ├── login.php
+│   └── contact.php
+│
+├── images/
+│   └── logo.png
+│
+├── docs/
+│   └── validation.png
+│
+└── sql/
+    └── vetfirststeps.sql

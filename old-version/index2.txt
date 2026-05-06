@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetFirstSteps</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+
+    <div class="first-portion">
+        <header id="site-header">
+            <h2>🐾VetFirstSteps</h2>
+            <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+                ☰
+            </button>
+        </header>
+
+        <!-- Main nav -->
+        <nav id="main-nav">
+            <a href="pages/AboutUs.html">About us</a>
+            <a href="pages/Help.html">Help</a>
+            <div id="actions">
+                <a href="pages/Login.html">Login</a>
+                <span class="sep">•</span>
+                <a href="pages/SignUp.html">Sign up</a>
+            </div>
+            <div id="nav-buttons">
+                <button id="lang-toggle" type="button">EN / ES</button>
+                <button id="theme-toggle" type="button">🌙 Dark Mode</button>
+            </div>
+        </nav>
+
+        <section id="site-section">
+            <div id="section-content">
+                <h1>Take your first steps in veterinary care</h1>
+                <p>Basic concepts for future vet students and curious pet owners.</p>
+                <a href="modules/index.html">Start Learning</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Second nav -->
+    <nav id="secondary-nav" hidden="true">
+        <h3>Modules</h3>
+        <ul>
+            <li><a href="modules/professional-ethics.html">Professional Ethics</a></li>
+            <li><a href="modules/canine-feline-ethology.html">Canine and Feline Ethology</a></li>
+            <li><a href="modules/veterinary-terminology.html">Veterinary Terminology</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+
+        <section id="brief-about">
+            <h2>About VetFirstSteps</h2>
+            <p>
+                VetFirstSteps is a beginner-friendly resource to learn essential animal care and veterinary basics, 
+                available in English and Spanish.
+            </p>
+        </section>
+
+        <section id="modules">
+            <h2>Learning Modules</h2>
+            <div id="modules-grid">
+
+                <article class="module-card" id="mod-profEth">
+                <h3>Professional Ethics</h3>
+                <p>Foundations of ethical practice in veterinary medicine.</p>
+                <a href="modules/professional-ethics.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-canFelEth">
+                <h3>Canine and Feline Ethology</h3>
+                <p>Behavioral principles of dogs and cats.</p>
+                <a href="modules/canine-feline-ethology.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-VetTerm">
+                <h3>Veterinary Terminology</h3>
+                <p>Essential terms and vocabulary for veterinary practice.</p>
+                <a href="modules/veterinary-terminology.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-oie">
+                <h3>OIE General Overview</h3>
+                <p>Introduction to international veterinary standards and the OIE.</p>
+                <a href="modules/oie-general-overview.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-anat1">
+                <h3>Anatomy & Physiology I</h3>
+                <p>Basic structures and functions of animal bodies.</p>
+                <a href="modules/anatomy-physiology-1.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-anat2">
+                <h3>Anatomy & Physiology II</h3>
+                <p>Intermediate study of organ systems and processes.</p>
+                <a href="modules/anatomy-physiology-2.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-anat3">
+                <h3>Anatomy & Physiology III</h3>
+                <p>Advanced exploration of anatomy and physiology topics.</p>
+                <a href="modules/anatomy-physiology-3.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-anat4">
+                <h3>Anatomy & Physiology IV</h3>
+                <p>Capstone module on integrated body systems.</p>
+                <a href="modules/anatomy-physiology-4.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-pharmIntro">
+                <h3>Intro to Pharmacy</h3>
+                <p>Basics of veterinary pharmacology and drug handling.</p>
+                <a href="modules/intro-pharmacy.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-labIntro">
+                <h3>Intro to Laboratory Analysis</h3>
+                <p>Fundamentals of lab tests and sample evaluation.</p>
+                <a href="modules/intro-laboratory-analysis.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-surgEquip">
+                <h3>Surgical Equipment</h3>
+                <p>Overview of tools and instruments used in veterinary surgery.</p>
+                <a href="modules/surgical-equipment.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-vetNut">
+                <h3>Veterinary Nutrition</h3>
+                <p>Principles of diet and feeding for animal health and wellbeing.</p>
+                <a href="modules/veterinary-nutrition.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-patPrep">
+                <h3>Patient Preparation</h3>
+                <p>Steps to prepare animals for clinical procedures and surgery.</p>
+                <a href="modules/patient-preparation.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-sampColl">
+                <h3>Sample Collection</h3>
+                <p>Techniques for collecting diagnostic samples safely and effectively.</p>
+                <a href="modules/sample-collection.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-hemat">
+                <h3>Hematology</h3>
+                <p>Study of blood and related diagnostic methods in veterinary medicine.</p>
+                <a href="modules/hematology.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-chem">
+                <h3>Chemistry</h3>
+                <p>Biochemical analysis relevant to veterinary diagnostics and practice.</p>
+                <a href="modules/chemistry.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-pharm1">
+                <h3>Veterinary Pharmacology I</h3>
+                <p>Introduction to drug classes, mechanisms, and safe administration.</p>
+                <a href="modules/veterinary-pharmacology-1.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-paras">
+                <h3>Parasitology</h3>
+                <p>Identification and management of common parasites in animals.</p>
+                <a href="modules/parasitology.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-infDis">
+                <h3>Infectious Diseases</h3>
+                <p>Overview of contagious conditions and their veterinary management.</p>
+                <a href="modules/infectious-diseases.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-dermIntro">
+                <h3>Dermatology Intro</h3>
+                <p>Basics of skin conditions, diagnosis, and treatments.</p>
+                <a href="modules/dermatology-intro.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-vaccProg">
+                <h3>Vaccination Programs</h3>
+                <p>Principles of immunization and preventive veterinary care.</p>
+                <a href="modules/vaccination-programs.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-fluidTher">
+                <h3>Fluid Therapy</h3>
+                <p>Managing hydration and electrolyte balance in veterinary patients.</p>
+                <a href="modules/fluid-therapy.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-reprod">
+                <h3>Reproduction</h3>
+                <p>Fundamentals of animal reproductive systems and veterinary care.</p>
+                <a href="modules/reproduction.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-anest1">
+                <h3>Anesthesia I</h3>
+                <p>Introduction to anesthesia principles, monitoring, and safety.</p>
+                <a href="modules/anesthesia-1.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-anest2">
+                <h3>Anesthesia II</h3>
+                <p>Advanced anesthesia techniques and protocols for veterinary practice.</p>
+                <a href="modules/anesthesia-2.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-firstAid">
+                <h3>First Aid</h3>
+                <p>Emergency response skills for veterinary settings.</p>
+                <a href="modules/first-aid.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-ultra">
+                <h3>Ultrasound</h3>
+                <p>Basics of imaging and diagnostic ultrasound in veterinary medicine.</p>
+                <a href="modules/ultrasound.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-cardio">
+                <h3>Practical Cardiology</h3>
+                <p>Introduction to heart health and diagnostic cardiology techniques.</p>
+                <a href="modules/practical-cardiology.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-admin">
+                <h3>Veterinary Administration</h3>
+                <p>Managing clinics, records, and veterinary operations effectively.</p>
+                <a href="modules/veterinary-administration.html" class="module-link">View Module</a>
+                </article>
+
+                <article class="module-card" id="mod-clientCare">
+                <h3>Client Care</h3>
+                <p>Communication and service skills for veterinary professionals.</p>
+                <a href="modules/client-care.html" class="module-link">View Module</a>
+                </article>
+
+            </div>
+            </section>
+
+        <section id="quiz">
+            <h2>Test your knowledge</h2>
+            <p>Try sample questions or take the full quiz to track your progress.</p>
+            <a href="pages/Quiz.html">Go to quiz</a>
+        </section>
+
+        <section id="glossary">
+            <h2>Glossary</h2>
+            <form class="glossary-search" role="search">
+                <label for="glossary-input">Search terms</label>
+                <input type="search" id="glossary-input" name="input-q" placeholder="Search terms...">
+            </form>
+            <a href="pages/glossary.html">Open full glossary</a>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <h2>Contact</h2>
+        <address>
+            <p>Questions or feedback? Send us a message.</p>
+        </address>
+        <form id="contact-form" action="php/Contact.php" method="post" novalidate>
+            <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+        <p class="copyright"> © 2025 VetFirstSteps</p>
+    </footer>
+
+</body>
+</html>

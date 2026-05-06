@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetFirstSteps</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <div class="first-portion">
+        <header class="site-header">
+            <h2>🐾VetFirstSteps</h2>
+            <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-header">
+                ☰
+            </button>
+        </header>
+        <nav class="site-nav" id="main-nav">
+            <a href="pages/AboutUs.html">About us</a>
+            <a href="pages/Help.html">Help</a>
+            <div id="actions">
+                <a href="pages/Login.html">Login</a>
+                <span class="sep">•</span>
+                <a href="pages/SignUp.html">Sign up</a>
+            </div>
+            <div id="nav-buttons">
+                <h4>Settings</h4>
+                <span>Change Language ES/EN</span><br>
+                <label class="switch" id="lang-toggle">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label><br>
+                <span>Change Theme</span><br>
+                <label class="switch" id="theme-toggle">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </nav>
+        <section class="site-section">
+            <div id="section-content">
+                <h1>Take your first steps in veterinary care</h1>
+                <p>Basic concepts for future vet students and curious pet owners.</p>
+                <a href="modules/index.html">Start Learning</a>
+            </div>
+            <div id="section-image">
+                <figure>
+                    <img src="images/section-image.png" alt="section">
+                </figure>
+            </div>
+        </section>
+    </div>
+    <div class="reviews" id="review-section">
+        <h2>What loyal learners have to say</h2>
+        <div class="review-card">
+            <figure>
+                <img src="images/user.png" alt="user">
+                <figcaption>Username</figcaption>
+            </figure>
+            <p>"I love learning here!"</p>
+        </div>
+        <div class="review-card">
+            <figure>
+                <img src="images/user.png" alt="user">
+                <figcaption>Username</figcaption>
+            </figure>
+            <p>"I love learning here!"</p>
+        </div>
+        <div class="review-card">
+            <figure>
+                <img src="images/user.png" alt="user">
+                <figcaption>Username</figcaption>
+            </figure>
+            <p>"I love learning here!"</p>
+        </div>
+        <a href="#more">See more</a>
+    </div>
+    <div class="modules">
+        <h2>Browse Our Modules by Category</h2>
+        <div id="modules-grid">
+            <article class="module-card" id="mod-profEth" data-category="ethics">
+                <img src="images/modules/mod-profEth.png" alt="">
+                <h3>Professional Ethics</h3>
+                <p>Foundations of ethical practice in veterinary medicine.</p>
+                <a href="modules/professional-ethics.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-canFelEth" data-category="ethology">
+            <h3>Canine and Feline Ethology</h3>
+            <p>Behavioral principles of dogs and cats.</p>
+            <a href="modules/canine-feline-ethology.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-VetTerm" data-category="terminology">
+            <h3>Veterinary Terminology</h3>
+            <p>Essential terms and vocabulary for veterinary practice.</p>
+            <a href="modules/veterinary-terminology.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-oie" data-category="ethics">
+            <h3>OIE General Overview</h3>
+            <p>Introduction to international veterinary standards and the OIE.</p>
+            <a href="modules/oie-general-overview.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-anat1" data-category="anatomy">
+            <h3>Anatomy & Physiology I</h3>
+            <p>Basic structures and functions of animal bodies.</p>
+            <a href="modules/anatomy-physiology-1.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-anat2" data-category="anatomy">
+            <h3>Anatomy & Physiology II</h3>
+            <p>Intermediate study of organ systems and processes.</p>
+            <a href="modules/anatomy-physiology-2.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-anat3" data-category="anatomy">
+            <h3>Anatomy & Physiology III</h3>
+            <p>Advanced exploration of anatomy and physiology topics.</p>
+            <a href="modules/anatomy-physiology-3.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-anat4" data-category="anatomy">
+            <h3>Anatomy & Physiology IV</h3>
+            <p>Capstone module on integrated body systems.</p>
+            <a href="modules/anatomy-physiology-4.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-pharmIntro" data-category="pharmacology">
+            <h3>Intro to Pharmacy</h3>
+            <p>Basics of veterinary pharmacology and drug handling.</p>
+            <a href="modules/intro-pharmacy.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-labIntro" data-category="diagnostics">
+            <h3>Intro to Laboratory Analysis</h3>
+            <p>Fundamentals of lab tests and sample evaluation.</p>
+            <a href="modules/intro-laboratory-analysis.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-surgEquip" data-category="surgery">
+            <h3>Surgical Equipment</h3>
+            <p>Overview of tools and instruments used in veterinary surgery.</p>
+            <a href="modules/surgical-equipment.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-vetNut" data-category="nutrition">
+            <h3>Veterinary Nutrition</h3>
+            <p>Principles of diet and feeding for animal health and wellbeing.</p>
+            <a href="modules/veterinary-nutrition.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-patPrep" data-category="surgery">
+            <h3>Patient Preparation</h3>
+            <p>Steps to prepare animals for clinical procedures and surgery.</p>
+            <a href="modules/patient-preparation.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-sampColl" data-category="diagnostics">
+            <h3>Sample Collection</h3>
+            <p>Techniques for collecting diagnostic samples safely and effectively.</p>
+            <a href="modules/sample-collection.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-hemat" data-category="diagnostics">
+            <h3>Hematology</h3>
+            <p>Study of blood and related diagnostic methods in veterinary medicine.</p>
+            <a href="modules/hematology.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-chem" data-category="diagnostics">
+            <h3>Chemistry</h3>
+            <p>Biochemical analysis relevant to veterinary diagnostics and practice.</p>
+            <a href="modules/chemistry.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-pharm1" data-category="pharmacology">
+            <h3>Veterinary Pharmacology I</h3>
+            <p>Introduction to drug classes, mechanisms, and safe administration.</p>
+            <a href="modules/veterinary-pharmacology-1.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-paras" data-category="parasitology">
+            <h3>Parasitology</h3>
+            <p>Identification and management of common parasites in animals.</p>
+            <a href="modules/parasitology.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-infDis" data-category="infectious">
+            <h3>Infectious Diseases</h3>
+            <p>Overview of contagious conditions and their veterinary management.</p>
+            <a href="modules/infectious-diseases.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-dermIntro" data-category="dermatology">
+            <h3>Dermatology Intro</h3>
+            <p>Basics of skin conditions, diagnosis, and treatments.</p>
+            <a href="modules/dermatology-intro.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-vaccProg" data-category="preventive">
+            <h3>Vaccination Programs</h3>
+            <p>Principles of immunization and preventive veterinary care.</p>
+            <a href="modules/vaccination-programs.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-fluidTher" data-category="therapy">
+            <h3>Fluid Therapy</h3>
+            <p>Managing hydration and electrolyte balance in veterinary patients.</p>
+            <a href="modules/fluid-therapy.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-reprod" data-category="reproduction">
+            <h3>Reproduction</h3>
+            <p>Fundamentals of animal reproductive systems and veterinary care.</p>
+            <a href="modules/reproduction.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-anest1" data-category="anesthesia">
+            <h3>Anesthesia I</h3>
+            <p>Introduction to anesthesia principles, monitoring, and safety.</p>
+            <a href="modules/anesthesia-1.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-anest2" data-category="anesthesia">
+            <h3>Anesthesia II</h3>
+            <p>Advanced anesthesia techniques and protocols for veterinary practice.</p>
+            <a href="modules/anesthesia-2.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-firstAid" data-category="emergency">
+            <h3>First Aid</h3>
+            <p>Emergency response skills for veterinary settings.</p>
+            <a href="modules/first-aid.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-ultra" data-category="diagnostics">
+            <h3>Ultrasound</h3>
+            <p>Basics of imaging and diagnostic ultrasound in veterinary medicine.</p>
+            <a href="modules/ultrasound.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-cardio" data-category="diagnostics">
+            <h3>Practical Cardiology</h3>
+            <p>Introduction to heart health and diagnostic cardiology techniques.</p>
+            <a href="modules/practical-cardiology.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-admin" data-category="administration">
+            <h3>Veterinary Administration</h3>
+            <p>Managing clinics, records, and veterinary operations effectively.</p>
+            <a href="modules/veterinary-administration.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" id="mod-clientCare" data-category="client-care">
+            <h3>Client Care</h3>
+            <p>Communication and service skills for veterinary professionals.</p>
+            <a href="modules/client-care.html" class="module-link">View Module</a>
+            </article>
+
+            <article class="module-card" data-category="none">
+            <h3>Press the button to start</h3>
+            <p>Discover all the variety of modules we have to offer you as a pet owner and animal lover.</p>
+            <a href="#filter-bar" >↓</a>
+            </article>
+        </div>
+        <div id="filter-bar">
+            <button class="filter-btn" data-filter="none">None</button>
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ethics">Ethics</button>
+            <button class="filter-btn" data-filter="ethology">Ethology</button>
+            <button class="filter-btn" data-filter="terminology">Terminology</button>
+            <button class="filter-btn" data-filter="anatomy">Anatomy</button>
+            <button class="filter-btn" data-filter="pharmacology">Pharmacology</button>
+            <button class="filter-btn" data-filter="nutrition">Nutrition</button>
+            <button class="filter-btn" data-filter="diagnostics">Diagnostics</button>
+            <button class="filter-btn" data-filter="surgery">Surgery</button>
+            <button class="filter-btn" data-filter="parasitology">Parasitology</button>
+            <button class="filter-btn" data-filter="infectious">Infectious Diseases</button>
+            <button class="filter-btn" data-filter="dermatology">Dermatology</button>
+            <button class="filter-btn" data-filter="preventive">Preventive Care</button>
+            <button class="filter-btn" data-filter="therapy">Therapy</button>
+            <button class="filter-btn" data-filter="reproduction">Reproduction</button>
+            <button class="filter-btn" data-filter="anesthesia">Anesthesia</button>
+            <button class="filter-btn" data-filter="emergency">Emergency</button>
+            <button class="filter-btn" data-filter="administration">Administration</button>
+            <button class="filter-btn" data-filter="client-care">Client Care</button>
+        </div>
+    </div>
+    <div class="test">
+        <section id="quiz">
+            <h2>Test your knowledge</h2>
+            <div class="quiz-container">
+                <div class="quiz-track">
+                    <!-- Question 1 -->
+                    <div class="quiz-slide active" data-answer="2">
+                        <h3>Which organ pumps blood through the body?</h3>
+                        <ul>
+                            <li><button class="option" data-index="0">Lungs</button></li>
+                            <li><button class="option" data-index="1">Liver</button></li>
+                            <li><button class="option" data-index="2">Heart</button></li>
+                            <li><button class="option" data-index="3">Kidneys</button></li>
+                        </ul>
+                    </div>
+                    <!-- Question 2 -->
+                    <div class="quiz-slide" data-answer="1">
+                        <h3>Which animal is a carnivore?</h3>
+                        <ul>
+                            <li><button class="option" data-index="0">Cow</button></li>
+                            <li><button class="option" data-index="1">Lion</button></li>
+                            <li><button class="option" data-index="2">Horse</button></li>
+                            <li><button class="option" data-index="3">Goat</button></li>
+                        </ul>
+                    </div>
+                    <!-- Question 3 -->
+                    <div class="quiz-slide" data-answer="0">
+                        <h3>Which nutrient is most important for building muscle?</h3>
+                        <ul>
+                            <li><button class="option" data-index="0">Protein</button></li>
+                            <li><button class="option" data-index="1">Carbohydrates</button></li>
+                            <li><button class="option" data-index="2">Fats</button></li>
+                            <li><button class="option" data-index="3">Vitamins</button></li>
+                        </ul>
+                    </div>
+                    <!-- Question 4 -->
+                    <div class="quiz-slide" data-answer="3">
+                        <h3>Which parasite is commonly found in dogs?</h3>
+                        <ul>
+                            <li><button class="option" data-index="0">Tapeworm</button></li>
+                            <li><button class="option" data-index="1">Fleas</button></li>
+                            <li><button class="option" data-index="2">Ticks</button></li>
+                            <li><button class="option" data-index="3">All of the above</button></li>
+                        </ul>
+                    </div>
+                    <!-- Question 5 -->
+                    <div class="quiz-slide" data-answer="2">
+                        <h3>Which diagnostic tool uses sound waves?</h3>
+                        <ul>
+                            <li><button class="option" data-index="0">X-ray</button></li>
+                            <li><button class="option" data-index="1">MRI</button></li>
+                            <li><button class="option" data-index="2">Ultrasound</button></li>
+                            <li><button class="option" data-index="3">CT Scan</button></li>
+                        </ul>
+                    </div>
+                    <!-- Question 6 -->
+                    <div class="quiz-slide" data-answer="1">
+                        <h3>Which organ filters toxins from the blood?</h3>
+                        <ul>
+                            <li><button class="option" data-index="0">Heart</button></li>
+                            <li><button class="option" data-index="1">Liver</button></li>
+                            <li><button class="option" data-index="2">Kidneys</button></li>
+                            <li><button class="option" data-index="3">Lungs</button></li>
+                        </ul>
+                    </div>
+                    <!-- Question 7 -->
+                    <div class="quiz-slide" data-answer="0">
+                        <h3>What is the normal body temperature of a dog?</h3>
+                        <ul>
+                            <li><button class="option" data-index="0">38–39°C</button></li>
+                            <li><button class="option" data-index="1">36–37°C</button></li>
+                            <li><button class="option" data-index="2">40–41°C</button></li>
+                            <li><button class="option" data-index="3">34–35°C</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz-nav">
+                <button id="prev">⬅ Prev</button>
+                <button id="next">Next ➡</button>
+            </div>
+            <div id="quiz-score" style="display:none;">
+                <h3>Your Score:</h3>
+                <p id="score-text"></p>
+            <button id="retry">Retry Quiz 🔄</button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <h2>VetFirstSteps</h2>
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#section-content">Start Learning</a></li>
+                <li><a href="#review-section">Reviews</a></li>
+                <li><a href="#modules-grid">Modules</a></li>
+                <li><a href="#quiz">Quick Test</a></li>
+            </ul>
+        </div>
+        <div class="form">
+            <h3>Questions or feedback? Send us a message.</h3>
+            <form id="contact-form" action="php/Contact.php" method="post" novalidate>
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <p class="copyright"> ©2025 VetFirstSteps. All rights reserved</p>
+    </footer>
+</body>
+</html>

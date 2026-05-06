@@ -1,0 +1,71 @@
+//Main nav toogle
+$(document).ready(function () {
+    $("#menu-toggle").click(function () {
+        $("#main-nav").toggleClass("active");
+
+        // Accessibility: update aria-expanded
+        const expanded = $(this).attr("aria-expanded") === "true";
+        $(this).attr("aria-expanded", !expanded);
+    });
+});
+
+//Dark Mode toogle
+$(document).ready(function () {
+    // Load saved theme
+    if (localStorage.getItem("theme") === "dark") {
+        $("body").addClass("dark-mode");
+        $("#theme-toggle").text("☀️ Light Mode");
+    }
+
+    $("#theme-toggle").click(function () {
+        $("body").toggleClass("dark-mode");
+
+        if ($("body").hasClass("dark-mode")) {
+        $(this).text("☀️ Light Mode");
+        localStorage.setItem("theme", "dark");
+        } else {
+        $(this).text("🌙 Dark Mode");
+        localStorage.setItem("theme", "light");
+        }
+    });
+});
+
+
+
+$(document).ready(function () {
+    // Load saved language or default to English
+    let currentLang = localStorage.getItem("lang") || "en";
+
+    // Apply saved language on page load
+    applyTranslations(currentLang);
+
+    // Set checkbox state based on language
+    $("#lang-toggle").prop("checked", currentLang === "es");
+
+    // Listen for checkbox change
+    $("#lang-toggle").change(function () {
+        currentLang = $(this).is(":checked") ? "es" : "en";
+        localStorage.setItem("lang", currentLang);
+        applyTranslations(currentLang);
+    });
+
+    function applyTranslations(lang) {
+        $("#section-content h1").text(translations[lang].heroTitle);
+        $("#section-content p").text(translations[lang].heroText);
+        $("#section-content a").text(translations[lang].startLearning);
+
+        $("#main-nav a[href='pages/AboutUs.html']").text(translations[lang].aboutUs);
+        $("#main-nav a[href='pages/Help.html']").text(translations[lang].help);
+        $("#actions a[href='pages/Login.html']").text(translations[lang].login);
+        $("#actions a[href='pages/SignUp.html']").text(translations[lang].signup);
+
+        $("#footer address p").text(translations[lang].contact);
+
+        // Accessibility: update <html lang="">
+        $("html").attr("lang", lang);
+    }
+});
+
+
+
+
