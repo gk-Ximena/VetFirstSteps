@@ -558,8 +558,377 @@ footer .copyright {
     color: var(--primary-light-color);
 }
 
+/* ============================= */
+/* Module detail page (modules/*.html) */
+/* ============================= */
 
+.module-page-header{
+    background-color: var(--secondary-dark-color);
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    padding: 1em;
+}
+body.dark-mode .module-page-header{
+    background-color: var(--primary-dark-color);
+}
 
+.breadcrumb{
+    padding: 1em 1.5em 0 1.5em;
+    font-size: 0.9em;
+}
+.breadcrumb a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+.breadcrumb a:hover{
+    text-decoration: underline;
+}
+.breadcrumb span.sep{
+    margin: 0 0.4em;
+    opacity: 0.6;
+}
+.breadcrumb span.current{
+    opacity: 0.75;
+}
+body.dark-mode .breadcrumb a,
+body.dark-mode .breadcrumb span{
+    color: var(--primary-light-color);
+}
 
+.module-hero{
+    padding: 1.5em;
+    text-align: center;
+}
+.module-hero .category-badge{
+    display: inline-block;
+    background-color: var(--primary-dark-color);
+    color: var(--primary-light-color);
+    padding: 0.3em 0.9em;
+    border-radius: 4em;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-bottom: 0.75em;
+}
+body.dark-mode .module-hero .category-badge{
+    background-color: var(--third-color);
+    color: var(--text-color);
+}
+.module-hero h1{
+    font-size: 2em;
+    margin-bottom: 0.4em;
+}
+.module-hero p{
+    font-size: 1.15em;
+    max-width: 40em;
+    margin: 0 auto;
+}
 
+.module-body{
+    max-width: 45em;
+    margin: 2em auto;
+    padding: 0 1.5em;
+}
+.module-body h2{
+    font-size: 1.3em;
+    margin-top: 1.5em;
+    margin-bottom: 0.6em;
+    border-bottom: 2px solid var(--third-color);
+    padding-bottom: 0.3em;
+}
+body.dark-mode .module-body h2{
+    border-bottom-color: var(--primary-dark-color);
+}
+.module-body ul{
+    padding-left: 1.4em;
+    margin-bottom: 1em;
+}
+.module-body li{
+    margin-bottom: 0.5em;
+}
+.content-placeholder{
+    background-color: var(--secondary-light-color);
+    border: 1px dashed var(--secondary-dark-color);
+    border-radius: 1em;
+    padding: 1em 1.2em;
+    font-size: 0.95em;
+    margin: 1em 0;
+}
+body.dark-mode .content-placeholder{
+    background-color: var(--primary-dark-color);
+    border-color: var(--third-color);
+}
 
+.module-actions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75em;
+    justify-content: center;
+    margin: 2em 0 1em 0;
+}
+.module-actions a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.6em 1.3em;
+    border-radius: 4em;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+.module-actions a:hover{
+    transform: scale(0.95);
+}
+.btn-primary{
+    background-color: var(--primary-dark-color);
+    color: var(--primary-light-color);
+}
+body.dark-mode .btn-primary{
+    background-color: var(--third-color);
+    color: var(--text-color);
+}
+.btn-secondary{
+    background-color: var(--third-color);
+    color: var(--text-color);
+}
+body.dark-mode .btn-secondary{
+    background-color: #749399;
+    color: var(--primary-light-color);
+}
+
+/* ============================= */
+/* Coming soon / placeholder page */
+/* ============================= */
+.coming-soon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 1.5em;
+    min-height: 40vh;
+}
+.coming-soon-card{
+    text-align: center;
+    max-width: 32em;
+    background-color: var(--secondary-light-color);
+    border: 1px dashed var(--secondary-dark-color);
+    border-radius: 2em;
+    padding: 2.5em 2em;
+}
+body.dark-mode .coming-soon-card{
+    background-color: var(--primary-dark-color);
+    border-color: var(--third-color);
+}
+.coming-soon-card .paw-icon{
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+.coming-soon-card h1{
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+.coming-soon-card p{
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+/* ============================= */
+/* Responsive: Tablet (>=640px)  */
+/* ============================= */
+@media (min-width: 640px){
+
+    /* Slightly roomier base spacing */
+    body{
+        padding: 1.5em;
+    }
+
+    /* Hero: text and image side by side */
+    .site-section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2.5em;
+        text-align: left;
+        padding: 2.5em 1.5em;
+    }
+    #section-content{
+        flex: 1;
+    }
+    #section-image{
+        flex: 1;
+    }
+    #section-content a{
+        margin-bottom: 0;
+    }
+
+    /* Reviews: lay cards out in a row */
+    .reviews{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .reviews h2{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .reviews > a{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .review-card{
+        margin: 1em 1.5em;
+    }
+
+    /* Modules: two-column layout */
+    #modules-grid{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.2em;
+    }
+    .module-card{
+        flex: 1 1 calc(50% - 1.2em);
+        margin-bottom: 0;
+    }
+
+    #filter-bar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Quiz: a bit wider for easier reading */
+    .quiz-container{
+        max-width: 640px;
+    }
+
+    /* Footer: quick links and form side by side */
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1.5em;
+    }
+    footer h2{
+        flex-basis: 100%;
+    }
+    footer .quick-links{
+        flex: 1;
+        min-width: 160px;
+    }
+    footer .form{
+        flex: 2;
+        min-width: 280px;
+        margin: 1em 0;
+    }
+
+    /* Module detail pages: more breathing room */
+    .breadcrumb{
+        padding: 1.3em 2em 0 2em;
+    }
+    .module-hero{
+        padding: 2em;
+    }
+}
+
+/* ============================= */
+/* Responsive: Desktop (>=1024px) */
+/* ============================= */
+@media (min-width: 1024px){
+
+    /* Constrain line length for readability, center the page */
+    body{
+        max-width: 1200px;
+        margin: 0 auto;
+        font-size: 1.15em;
+    }
+
+    /* Persistent horizontal nav, hide the hamburger */
+    .menu-toggle{
+        display: none;
+    }
+    .site-nav{
+        display: flex !important;
+        background: transparent;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1.5em;
+        padding: 0.5em 0 0 0;
+    }
+    body.dark-mode .site-nav{
+        background: transparent;
+    }
+    .site-nav a{
+        text-align: left;
+        margin-right: 1.5em;
+    }
+    #actions{
+        text-align: left;
+        font-size: 1em;
+        font-weight: normal;
+        display: flex;
+        align-items: center;
+        margin-right: 1.5em;
+    }
+    #actions a{
+        margin-right: 0.4em;
+    }
+    #actions .sep{
+        margin-right: 0.4em;
+    }
+    #nav-buttons{
+        display: flex;
+        align-items: center;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+        padding: 0;
+    }
+    #nav-buttons > *{
+        margin-right: 0.8em;
+    }
+    #nav-buttons > *:last-child{
+        margin-right: 0;
+    }
+    body.dark-mode #nav-buttons{
+        background: transparent;
+    }
+    #nav-buttons br{
+        display: none;
+    }
+    #nav-buttons h4{
+        font-size: 1em;
+    }
+
+    /* Hero gets extra room and larger heading */
+    .site-section{
+        padding: 3.5em 2em;
+    }
+    #section-content h1{
+        font-size: 2.6em;
+    }
+
+    /* Modules: three-column layout */
+    #modules-grid{
+        gap: 1.5em;
+    }
+    .module-card{
+        flex: 1 1 calc(33.333% - 1.5em);
+    }
+    #filter-bar{
+        justify-content: center;
+    }
+
+    /* Quiz: comfortable reading width */
+    .quiz-container{
+        max-width: 700px;
+    }
+    .quiz-slide h3{
+        font-size: 1.7em;
+    }
+
+    /* Module detail pages: cap width for readability, larger heading */
+    .module-body{
+        max-width: 50em;
+    }
+    .module-hero h1{
+        font-size: 2.4em;
+    }
+}
